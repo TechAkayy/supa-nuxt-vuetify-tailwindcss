@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@pinegrow/nuxt-module',
+    // '@pinegrow/nuxt-module',
     '@unocss/nuxt',
     '@nuxt/devtools',
     '@nuxt/content',
@@ -28,36 +28,36 @@ export default defineNuxtConfig({
     '@nuxtjs/supabase',
   ],
 
-  pinegrow: {
-    liveDesigner: {
-      iconPreferredCase: 'unocss', // default value (can be removed), nuxt/ui uses the unocss format for icon names
-      devtoolsKey: 'devtools', // see plugins/devtools.client.ts
-      tailwindcss: {
-        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-        configPath: 'tailwind.config.ts',
-        cssPath: '@/assets/css/tailwind.css',
-        // themePath: false, // Set to false so that Design Panel is not used
-        // restartOnConfigUpdate: true,
-        restartOnThemeUpdate: true,
-      },
-      vuetify: {
-        configPath: 'vuetify.config.ts',
-        utilities: false,
-        themePath: false, // Set to false so that tailwind Design Panel is used instead of Vuetify
-        // restartOnConfigUpdate: true,
-        restartOnThemeUpdate: true,
-      },
-      // plugins: [
-      //   {
-      //     name: 'My Awesome Lib 3.0',
-      //     key: 'my-awesome-lib',
-      //     pluginPath: fileURLToPath(
-      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
-      //     ),
-      //   },
-      // ],
-    },
-  },
+  // pinegrow: {
+  //   liveDesigner: {
+  //     iconPreferredCase: 'unocss', // default value (can be removed), nuxt/ui uses the unocss format for icon names
+  //     devtoolsKey: 'devtools', // see plugins/devtools.client.ts
+  //     tailwindcss: {
+  //       /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+  //       configPath: 'tailwind.config.ts',
+  //       cssPath: '@/assets/css/tailwind.css',
+  //       // themePath: false, // Set to false so that Design Panel is not used
+  //       // restartOnConfigUpdate: true,
+  //       restartOnThemeUpdate: true,
+  //     },
+  //     vuetify: {
+  //       configPath: 'vuetify.config.ts',
+  //       utilities: false,
+  //       themePath: false, // Set to false so that tailwind Design Panel is used instead of Vuetify
+  //       // restartOnConfigUpdate: true,
+  //       restartOnThemeUpdate: true,
+  //     },
+  //     // plugins: [
+  //     //   {
+  //     //     name: 'My Awesome Lib 3.0',
+  //     //     key: 'my-awesome-lib',
+  //     //     pluginPath: fileURLToPath(
+  //     //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+  //     //     ),
+  //     //   },
+  //     // ],
+  //   },
+  // },
 
   // Vuetify's global styles
   css: [
