@@ -2,7 +2,7 @@
 // import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
-  ssr: false,
+  // ssr: false,
   devtools: { enabled: false }, // Disable when using Vue devtools
 
   // Look into MetaTags.vue for other flavours
