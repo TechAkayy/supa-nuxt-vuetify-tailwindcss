@@ -3,7 +3,10 @@ export default defineNuxtConfig({
 
   modules: [
     /* Module method */
-    'vuetify-nuxt-module',
+    // 'vuetify-nuxt-module',
     '@nuxtjs/supabase',
   ],
+  build: {
+    transpile: ['vuetify'],
+  },
 })
